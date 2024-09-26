@@ -1,0 +1,457 @@
+/*fonts*/
+@font-face {
+    src: url(fonts/OpenSans/static/OpenSans-Light.ttf);
+    font-family: OpenSans-Light;
+}
+
+body{
+    background-color: grey; 
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+/*fonts*/
+    font-family: 'Open+Sans', Verdana, Geneva, Tahoma, sans-serif;
+    color: aqua;
+
+/*border*/
+    border: 3px black solid;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 10px;
+
+/*shadow*/
+    text-shadow: 5px 5px 5px black, -5px -5px 5px red;
+}
+p{
+/*fonts*/
+    font-family: OpenSans-Light, 'Open+Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    color: antiquewhite;
+    
+/*border*/
+    border-bottom: 3px black solid;
+    border-top: 3px black solid;
+    border-left: 3px black solid;
+    border-right: 3px black solid;
+    border-radius: 10px;
+}
+/*
+#p1{
+    color: red;
+}
+#p2{
+    color: green;
+}
+#p3{
+    color: blue;
+}
+#p4{
+    color: green;
+}*/
+.odd{
+    color: red;
+}
+.even{
+    color: blue;
+}
+
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+}
+
+#box1{
+    background-color: red;
+    box-shadow: 5px 5px 5px black;
+    margin-left: autof;
+}
+
+#box2{
+    background-color: blue;
+    box-shadow: 5px 5px 5px black;
+}
+
+#img1{
+    float: left;
+    margin-right: 30px;
+}
+
+#img2{
+    float: right;
+    margin-left: 30px;
+}
+
+#float{
+    border: 5px solid;
+    display: flow-root;
+}
+
+#overflow{
+    border: 5px solid;
+    height: 100px;
+    overflow: auto;
+}
+
+.a23{
+    border: 2px solid;
+    height: auto;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+
+#box24a{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: sticky;
+    left: 100px;
+}
+#box24b{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+}
+#box24c{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#a26{
+    border: 2px solid;
+}
+#a26 > p{
+    background-color: aqua;
+}
+
+a:link{
+    font-size: 100px;
+}
+a:hover{
+    font-size: 120px;
+    color: brown;
+}
+a:active{
+    font-size: 120px;
+    color: purple;
+}
+a:visited{
+    color: wheat;
+}
+
+li:hover{
+    background-color: yellow;
+}
+li:not(:hover){
+    background-color: gray;
+}
+li:nth-child(2n){
+    background-color: whitesmoke;
+}
+#a27 p{
+    background-color: whitesmoke;
+    padding: 10px;
+    display: none;
+}
+#a27:hover p{
+    display: block;
+}
+
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+p::first-line{
+    background-color: aquamarine;
+}
+p::selection{
+    color: green;
+    background-color: gray;
+}
+#fruit li::before{
+    content: "😊";
+
+}
+#apple::after{
+    content: "😊";
+}
+#banana::after{
+    content: "😊";
+}
+#lemon::after{
+    content: "😊";
+}
+#fruit li::marker{
+    content: "😊";
+    color: green;
+    font-size: 1.2em;
+}
+
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color: greenyellow;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active){
+    background-color: grey;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: gray;
+    padding: 10px 15px;
+    border: solid;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .Foodcontent{
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+}
+.dropdown:hover .Foodcontent{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: antiquewhite;
+}
+.dropdown a:hover{
+    background-color: antiquewhite;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: gray;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: grey;
+}
+.navbar li{
+    float: left;
+}
+
+*{
+    box-sizing: border-box;
+}
+aside{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+article{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+footer{
+    display: block;
+    clear: both;
+    text-align: center;
+    padding: 25px;
+}
+@media screen and (max-width:600px) {
+    aside, section, article{
+        width: 100%;
+    }
+}
+
+.gallery{
+    display: inline-block;
+    border: 1px solid;
+    margin: 5px;
+    width: 200px;
+}
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+.gallery:hover{
+    border: 1px lightgray;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+.icon{
+    text-align: center;
+}
+.fa-solid.fa-house.fa-1x{
+    color: hsl(0, 0%, 0%);
+}
+.fa-brands.fa-youtube.fa-1x{
+    color: hsl(0, 100%, 50%);
+}
+.fa-brands.fa-facebook.fa-1x{
+    color: hsl(240, 100%, 50%);
+}
+.fa-solid.fa-house.fa-1x:hover{
+    color: hsl(0, 0%, 25%);
+}
+.fa-brands.fa-youtube.fa-1x:hover{
+    color: hsl(0, 100%, 70%);
+}
+.fa-brands.fa-facebook.fa-1x:hover{
+    color: hsl(240, 100%, 70%);
+}
+
+.flexbox_container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 10px solid;
+    height: auto;
+    width: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: self-start;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 1em;
+    padding: 10px;
+}
+.flexbox{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 10px;
+}
+#flexbox1{
+    background-color: red;
+}
+#flexbox2{
+    background-color: green;
+}
+#flexbox3{
+    background-color: blue;
+}
+#flexbox4{
+    background-color: yellow;
+}
+
+#transform1{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 12em;
+    text-align: center;
+    background-color: green;
+
+    transform: translate(50px,50px);
+    transform: rotateX(180deg);
+    transform: scale(2,2);
+    transform: skew(45deg,0deg);
+}
+
+#animation{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    font-size: 12em;
+    text-align: center;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+#animation:hover{
+    animation-name: glow;
+    animation-duration: 2s;
+}
+#animation:active{
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+@keyframes slideLeft {
+    from{transform: translateX(100%);}
+}
+@keyframes slideRight {
+    to{transform: translateX(100%);}
+}
+@keyframes slideUp {
+    from{transform: translateY(100%);}
+}
+@keyframes slideDown {
+    to{transform: translateY(100%);}
+}
+@keyframes rotate {
+    50%{transform: rotateX(360deg);}
+}
+@keyframes grow {
+    50%{transform: scale(2,2);}
+}
+@keyframes shrink {
+    50%{transform: scale(0.5,0.5);}
+}
+@keyframes fade {
+    50%{opacity: 0;}
+}
+@keyframes fadeIn {
+    50%{opacity: 1;}
+}
+@keyframes colorChange {
+    0%{background-color: red;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+}
+@keyframes glow {
+    50%{box-shadow: 0px 0px 50px yellow;}
+}
